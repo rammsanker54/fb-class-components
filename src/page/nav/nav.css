@@ -1,0 +1,10 @@
+.navigate{
+    display: flex;
+    color: rgb(115, 115, 222);
+    padding: 20px;
+    margin: 120px;
+    
+}
+.navigate a{
+    padding: 20px 30px;
+}

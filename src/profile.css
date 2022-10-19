@@ -1,0 +1,15 @@
+.profilee{
+    width: 100%;
+    background-color: rgb(0, 145, 255);
+}
+.bdy{
+    background: linear-gradient(0.25turn, #a2beca, #ebf8e1, #e65fcb);
+}
+.bdy span{
+    color: rgb(47, 15, 15);
+    font-weight: 900;
+    
+}
+.bgh{
+    background: linear-gradient(0.25turn, #0bd05a, #c7a912, #5e5ebb);
+}
