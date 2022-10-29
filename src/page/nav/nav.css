@@ -8,3 +8,10 @@
 .navigate a{
     padding: 20px 30px;
 }
+ h1{
+    color: blue;
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+}
+

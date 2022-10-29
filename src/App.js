@@ -3,17 +3,23 @@ import './App.css';
 import Nav from './page/nav/nav.js';
 import Menu from './menu.js';
 import Newsfeed from './newsfeed.js';
- import Profile from './profile.js';
+ import Profile from './Profile.js';
+ import { BrowserRouter} from 'react-router-dom';
+ import { Route } from 'react-router-dom';
+ import { Routes } from 'react-router-dom';
 
 function App() {
-  return ( <div>
-    <div> <Nav/></div>
-    <div className='flex-menu'>
-    <div className='menu'><Menu/></div>
-    <div className='news-feed'> < Newsfeed/></div>
-    { <div className='request-profile'><Profile/></div> }
-    </div>
-  </div> );
+  return (
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<Nav/>}> </Route><Route path='menu' element={<Menu/>}> </Route>
+      <Route path='newsfeed' element={<Newsfeed/>}> </Route>
+      <Route path='profile' element={<Profile/>}> </Route>
+
+      <Route path='*' element="page not found 404"> </Route>
+      </Routes>
+        </BrowserRouter>
+   );
 }
 
 export default App;
